@@ -1,6 +1,9 @@
 import { useState } from 'react'
+import {io} from 'socket.io-client'
 import reactLogo from './assets/react.svg'
 import './App.css'
+
+const socket = io('http://localhost:4000')
 
 function App() {
   const [count, setCount] = useState(0)
